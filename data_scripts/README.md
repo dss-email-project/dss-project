@@ -1,4 +1,4 @@
-# data_scipts
+# data_scripts
 
 This will contain scripts used to process and clean the Enron email data.
 
