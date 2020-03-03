@@ -82,8 +82,10 @@ def populate_database(host, user, passwd, name, query_path):
 
     print(f"Retreiving query at {query_path} ..")
     query = get_query(query_path)
-    print(f"Setting max_allowed_packet..")
-    cursor.execute("SET GLOBAL max_allowed_packet=128M;")
+    print(f"Configuring query settings..")
+    cursor.execute("SET GLOBAL max_allowed_packet=1073741824000;")
+    cursor.execute("SET GLOBAL connect_timeout=28800;")
+    cursor.execute("SET GLOBAL wait_timeout=28800;")
     print(f"Executing query..")
     cursor.execute(query)
     print(f"Executing query to database {name}..")
