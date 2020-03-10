@@ -1,6 +1,6 @@
-import pandas as pd
 import email
 import argparse
+import pandas as pd
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     inpath, outpath = get_args()
 
     # Load csv located at inpath
-    print("Loading file {inpath} ..")
+    print(f"Loading file {inpath} ..")
     emails_df = pd.read_csv(inpath)
     emails_df.rename(columns={'message':'data'}, inplace=True)
 
