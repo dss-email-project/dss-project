@@ -1,4 +1,4 @@
 # Data 
 
-[A database representation](http://bailando.sims.berkeley.edu/enron/enron.sql.gz) 
-of the Enron emails was aquired. (219 MB compressed).
+The [Enron Dataset](https://www.kaggle.com/wcukierski/enron-email-dataset) was aquired from Kaggle. (1.43 GB
+)
